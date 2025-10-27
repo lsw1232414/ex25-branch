@@ -1,4 +1,4 @@
-package com.lsw;
+package com.lsw.ex25_branch;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
