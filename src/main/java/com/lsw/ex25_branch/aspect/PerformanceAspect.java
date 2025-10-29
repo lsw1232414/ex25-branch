@@ -14,7 +14,7 @@ import lombok.extern.slf4j.Slf4j;
 @Component
 public class PerformanceAspect {
 
-	@Around("execution(* com.skc.mybatis.service.*.*(..))")
+	@Around("execution(* com.lsw.ex25_branch.service.*.*(..))")
 	public Object measureTime(ProceedingJoinPoint pjp) throws Throwable {
 		long start = System.currentTimeMillis();
 		Object result = pjp.proceed();

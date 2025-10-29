@@ -15,7 +15,7 @@ import lombok.extern.slf4j.Slf4j;
 @Component
 public class LoggingAspect {
 
-	@Before("execution(* com.skc.mybatis.service.*.*(..))")
+	@Before("execution(* com.lsw.ex25_branch.service.*.*(..))")
 	public void logBefore(JoinPoint jp) {
 		log.info("##### 메서드 실행전: {} #####Before#####", jp.getSignature());
 	}
@@ -25,7 +25,7 @@ public class LoggingAspect {
 //		log.info("##### 메서드\n 예외: {}, \n오류: {} #####end#####", jp.getSignature(), excep.getMessage());
 //	}
 
-	@AfterReturning(pointcut = "execution(* com.skc.mybatis.service.*.*(..))", returning = "result")
+	@AfterReturning(pointcut = "execution(* com.lsw.ex25_branch.*.*(..))", returning = "result")
 	public void logAfter(JoinPoint jp, Object result) {
 		log.info("##### 메서드\n 실행성공: {}, \n결과: {} #####AfterReturning#####", jp.getSignature(), result);
 	}
