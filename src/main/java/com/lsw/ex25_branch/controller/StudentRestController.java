@@ -23,21 +23,7 @@ import lombok.RequiredArgsConstructor;
 public class StudentRestController {
 
 //	Dependency injection : 방법1
-//	@Autowired
 //	private StudentService studentService;
-
-//	Dependency injection : 방법2
-//	private final StudentService studentService;
-//	public StudentRestController(StudentService studentService) {
-//		this.studentService = studentService;
-//	}
-
-//	Dependency injection : 방법3-롬복
-//	@RequiredArgsConstructor
-//	public class StudentRestController {
-//		private final StudentService studentService;
-//	}
-
 	private final StudentService studentService;
 
 //	전체 조회: GET http://localhost:8080/api/students
